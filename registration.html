@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-container td {
+            padding: 10px 0;
+            padding-bottom: 20px;
+            text-align: center;
+            color: rgb(5, 53, 61);
+            font-weight: bold;
+        }
+        .form-container table {
+            border-radius: 5px;
+        }
+        input{
+            padding-left: 10px;
+            height: 20px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        textarea{
+            padding-left: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body bgcolor="LightGrey">  
+    <div class="form-container">
+        <h1 align="center">REGISTRATION FORM</h1>
+        <table align="center" border="2px" bgcolor="LightSeaGreen">
+            <form>
+                <tr>
+                    <td>Enter Your Name:</td>
+                    <td><input type="text" name="firstName" placeholder="enter your name" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Last Name:</td>
+                    <td><input type="text" name="lastName" placeholder="last name" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Password:</td>
+                    <td><input type="password" name="password" placeholder="enter password" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Mobile Number:</td>
+                    <td><input type="tel" name="mobile" placeholder="enter phone number" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Address:</td>
+                    <td><textarea name="address" rows="7" cols="49" placeholder="Your Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <label><input type="radio" name="gender">Male</label>
+                        <label><input type="radio" name="gender">Female</label>
+                        <label><input type="radio" name="gender">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <label><input type="checkbox" name="hobby">Cricket</label>
+                        <label><input type="checkbox" name="hobby">Hockey</label>
+                        <label><input type="checkbox" name="hobby">PCgames</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Select Your Country:</td>
+                    <td>
+                        <select name="country">
+                            <option value="">Select Your country</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Indonesia">Indonesia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Your Picture:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit" style="padding: 10px 20px 25px;">
+                        <input type="reset" value="Reset" style="padding: 10px 20px 25px;">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
